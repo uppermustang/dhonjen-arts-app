@@ -27,10 +27,13 @@ export default function Header() {
     <header className={`header ${menuOpen ? 'header--menu-open' : ''}`}>
       <div className="container header__bar">
         <Link to="/" className="header__logo" onClick={closeMenu}>
-          <span className="header__logo-mark">DA</span>
-          <span className="header__logo-text">
-            Dhonjen <em>Arts</em>
-          </span>
+          <img
+            src="/dhonjenartsLogo.png"
+            alt="Dhonjen Arts"
+            className="header__logo-img"
+            width={180}
+            height={48}
+          />
         </Link>
 
         <button

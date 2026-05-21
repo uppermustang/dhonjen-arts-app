@@ -70,18 +70,13 @@ export const services = [
 
 
 
-/** Placeholder images for About page — swap with real photos when ready */
+/** About page images — files in client/public/images/about/ */
 export const aboutImages = {
-  portrait:
-    'https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&h=1000&fit=crop',
-  studio:
-    'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=700&h=500&fit=crop',
-  painting:
-    'https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&h=750&fit=crop',
-  teaching:
-    'https://images.unsplash.com/photo-1460661414737-f34d21bf7429?w=600&h=450&fit=crop',
-  mural:
-    'https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=600&h=450&fit=crop',
+  portrait: '/images/about/portrait.jpg',
+  studio: '/images/about/studio.jpg',
+  painting: '/images/about/painting.jpg',
+  teaching: '/images/about/teaching.jpg',
+  mural: '/images/about/mural.jpg',
 };
 
 export const aboutHighlights = [

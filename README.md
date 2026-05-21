@@ -58,6 +58,16 @@ Contact form on Vercel uses `api/contact.js` (serverless). Local dev still uses 
 
 Submissions POST to `/api/contact` and are logged to the server console. Connect an email provider (SendGrid, Nodemailer, etc.) in `server/index.js` when ready for production.
 
-## Replace placeholder images
+## Replace images (local files)
 
-Edit `client/src/data/galleryArt.js` with your real artwork URLs and titles.
+Put your photos in **`client/public/images/`** — see `client/public/images/README.md` for the full list.
+
+| Folder | Count | Used on |
+|--------|-------|---------|
+| `gallery/` | 30 files (`01.jpg` … `30.jpg`) | Gallery, Home featured grid |
+| `about/` | 5 files | About page |
+| `commission/` | `sidebar.jpg` | Contact form page |
+
+**Home landing hero** is unchanged (still in `client/src/pages/Home.jsx`).
+
+Edit titles/categories in `client/src/data/galleryArt.js` if needed.

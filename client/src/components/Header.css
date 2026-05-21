@@ -32,35 +32,24 @@
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
   flex-shrink: 0;
+  line-height: 0;
 }
 
-.header__logo-mark {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--color-accent-light);
-  background: var(--color-ink);
-  border-radius: var(--radius);
+.header__logo-img {
+  display: block;
+  height: 48px;
+  width: auto;
+  max-width: min(200px, 52vw);
+  object-fit: contain;
+  object-position: left center;
 }
 
-.header__logo-text {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
-
-.header__logo-text em {
-  font-style: italic;
-  font-weight: 400;
-  color: var(--color-accent);
+@media (max-width: 768px) {
+  .header__logo-img {
+    height: 40px;
+    max-width: 160px;
+  }
 }
 
 .header__nav {

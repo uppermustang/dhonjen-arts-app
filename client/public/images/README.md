@@ -15,8 +15,7 @@ client/public/images/
 │   wallArt.jpg
 │   artClass.jpg
 │   personlizedArt.png
-└── commission/       ← Contact page sidebar
-    sidebar.jpg
+└── commission/       ← optional local sidebar (or use Unsplash in siteContent.js)
 ```
 
 ## Gallery (`gallery/`)
@@ -48,9 +47,7 @@ Recommended size: **1200px** on the long edge, under **500 KB** each if possible
 
 ## Commission (`commission/`)
 
-| File         | Where it appears        |
-|--------------|-------------------------|
-| sidebar.jpg  | Left side of contact form |
+Contact sidebar image is set in `siteContent.js` (`commissionImages.sidebar`) — currently a free Unsplash photo of paints and brushes. To use your own file instead, add `sidebar.jpg` here and point `commissionImages.sidebar` to `/images/commission/sidebar.jpg`.
 
 ## After adding files
 

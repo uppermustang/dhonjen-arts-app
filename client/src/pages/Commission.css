@@ -7,10 +7,14 @@
 
 .commission-aside img {
   width: 100%;
+  height: auto;
   aspect-ratio: 3 / 4;
+  min-height: 280px;
   object-fit: cover;
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
+  display: block;
+  background: var(--color-bg-alt);
 }
 
 .commission-aside__card {

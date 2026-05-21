@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { site, services } from '../data/siteContent';
+import { commissionImages, site, services } from '../data/siteContent';
 import './Commission.css';
 
 const COMMISSION_TYPES = [
@@ -76,9 +76,8 @@ export default function Commission() {
         <div className="container commission-layout">
           <aside className="commission-aside">
             <img
-              src="/images/commission/sidebar.jpg"
-              alt=""
-              aria-hidden="true"
+              src={commissionImages.sidebar}
+              alt="Paint tubes and brushes in an artist studio"
               loading="lazy"
             />
             <div className="commission-aside__card">

@@ -32,23 +32,50 @@
 .header__logo {
   display: flex;
   align-items: center;
+  gap: 0.65rem;
   flex-shrink: 0;
-  line-height: 0;
 }
 
 .header__logo-img {
   display: block;
-  height: 48px;
+  height: 44px;
   width: auto;
-  max-width: min(200px, 52vw);
+  max-width: 120px;
   object-fit: contain;
   object-position: left center;
+  flex-shrink: 0;
+}
+
+.header__logo-text {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--color-ink);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.header__logo-text em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-accent);
 }
 
 @media (max-width: 768px) {
   .header__logo-img {
-    height: 40px;
-    max-width: 160px;
+    height: 36px;
+    max-width: 90px;
+  }
+
+  .header__logo-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .header__logo-text {
+    font-size: 1.05rem;
   }
 }
 

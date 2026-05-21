@@ -72,11 +72,15 @@ export const services = [
 
 /** About page images — files in client/public/images/about/ */
 export const aboutImages = {
-  portrait: '/images/about/portrait.jpg',
-  studio: '/images/about/studio.jpg',
-  painting: '/images/about/painting.jpg',
-  teaching: '/images/about/teaching.jpg',
-  mural: '/images/about/mural.jpg',
+  portrait: '/images/about/DhonjenProfile.jpg',
+  /** Left column beside “Few words about me” — from gallery */
+  bioFeatured: '/images/gallery/Dhonjen%20(23).jpg',
+  wallArt: '/images/about/wallArt.jpg',
+  artClass: '/images/about/artClass.jpg',
+  personalized: '/images/about/personlizedArt.png',
+  /** Van Gogh quote backdrop — free Unsplash (museum / painting) */
+  vanGogh:
+    'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80',
 };
 
 export const aboutHighlights = [

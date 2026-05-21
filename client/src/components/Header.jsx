@@ -29,11 +29,14 @@ export default function Header() {
         <Link to="/" className="header__logo" onClick={closeMenu}>
           <img
             src="/dhonjenartsLogo.png"
-            alt="Dhonjen Arts"
+            alt=""
             className="header__logo-img"
-            width={180}
+            width={120}
             height={48}
           />
+          <span className="header__logo-text">
+            Dhonjen <em>Arts</em>
+          </span>
         </Link>
 
         <button

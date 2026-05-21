@@ -10,9 +10,9 @@ import {
 import './About.css';
 
 const serviceImages = {
-  'Wall Art': aboutImages.mural,
-  'Art Class': aboutImages.teaching,
-  Personalized: aboutImages.painting,
+  'Wall Art': aboutImages.wallArt,
+  'Art Class': aboutImages.artClass,
+  Personalized: aboutImages.personalized,
 };
 
 export default function About() {
@@ -67,21 +67,13 @@ export default function About() {
       {/* Bio + image collage */}
       <section className="section section--alt">
         <div className="container about-bio">
-          <div className="about-bio__gallery">
-            <figure className="about-bio__figure about-bio__figure--tall">
-              <img src={aboutImages.studio} alt="Paintings and artwork" loading="lazy" />
-            </figure>
-            <figure className="about-bio__figure about-bio__figure--wide">
-              <img src={aboutImages.painting} alt="Colorful abstract painting detail" loading="lazy" />
-            </figure>
-            <figure className="about-bio__figure about-bio__figure--accent">
-              <img src={aboutImages.teaching} alt="Art class in session" loading="lazy" />
-            </figure>
-            <div className="about-bio__graphic" aria-hidden="true">
-              <span className="about-bio__brush" />
-              <p>Colorful · Vivid · Optimistic</p>
-            </div>
-          </div>
+          <figure className="about-bio__featured">
+            <img
+              src={aboutImages.bioFeatured}
+              alt="Selected work from Dhonjen Arts gallery"
+              loading="lazy"
+            />
+          </figure>
           <div className="about-bio__content">
             <h2 className="section-title">Few words about me</h2>
             {bioParagraphs.map((block, idx) => (
@@ -125,7 +117,7 @@ export default function About() {
       <section className="section section--alt about-quotes-section">
         <div className="container about-quotes">
           <div className="about-quotes__visual" aria-hidden="true">
-            <img src={aboutImages.mural} alt="" />
+            <img src={aboutImages.vanGogh} alt="" />
             <div className="about-quotes__overlay" />
           </div>
           <div className="about-quotes__content">

@@ -11,11 +11,10 @@ client/public/images/
 ├── gallery/          ← Your artwork files (e.g. Dhonjen (1).jpg)
 │   List is wired in client/src/data/galleryArt.js
 ├── about/            ← About page
-│   portrait.jpg      (main photo of you)
-│   studio.jpg
-│   painting.jpg
-│   teaching.jpg
-│   mural.jpg         (quotes section background)
+│   DhonjenProfile.jpg
+│   wallArt.jpg
+│   artClass.jpg
+│   personlizedArt.png
 └── commission/       ← Contact page sidebar
     sidebar.jpg
 ```
@@ -38,15 +37,14 @@ Recommended size: **1200px** on the long edge, under **500 KB** each if possible
 
 ## About (`about/`)
 
-| File          | Where it appears              |
-|---------------|-------------------------------|
-| portrait.jpg  | Top of About page             |
-| studio.jpg    | Bio collage (tall)            |
-| painting.jpg  | Bio collage                   |
-| teaching.jpg  | Bio collage                   |
-| mural.jpg     | Quotes section (left image)   |
+| File                 | Where it appears                          |
+|----------------------|-------------------------------------------|
+| DhonjenProfile.jpg   | Top intro portrait                        |
+| wallArt.jpg          | “Wall art…” service card                  |
+| artClass.jpg         | “Art Class” service card                  |
+| personlizedArt.png   | “Personalized” service card               |
 
-Service cards on About reuse: mural.jpg, teaching.jpg, painting.jpg (see `About.jsx`).
+“Few words about me” uses one image from `gallery/` (see `aboutImages.bioFeatured` in `siteContent.js`). Quotes backdrop uses a Van Gogh-themed Unsplash image in code.
 
 ## Commission (`commission/`)
 

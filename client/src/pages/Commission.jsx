@@ -77,8 +77,9 @@ export default function Commission() {
           <aside className="commission-aside">
             <img
               src={commissionImages.sidebar}
-              alt="Paint tubes and brushes in an artist studio"
-              loading="lazy"
+              alt="Custom wall art and mural painting"
+              loading="eager"
+              decoding="async"
             />
             <div className="commission-aside__card">
               <h2>What clients ask for</h2>

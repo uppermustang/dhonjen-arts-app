@@ -86,10 +86,9 @@ export const aboutImages = {
     'https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?auto=format&fit=crop&w=1200&q=80',
 };
 
-/** Contact page sidebar — Unsplash License (free to use) */
+/** Contact page sidebar — local image (same wall-art photo as About services) */
 export const commissionImages = {
-  sidebar:
-    'https://images.unsplash.com/photo-1513364776144-776ff827ada0?auto=format&fit=crop&w=900&h=1200&q=80',
+  sidebar: aboutImage('wallArt.jpg'),
 };
 
 export const aboutHighlights = [

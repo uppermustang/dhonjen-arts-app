@@ -47,7 +47,7 @@ Recommended size: **1200px** on the long edge, under **500 KB** each if possible
 
 ## Commission (`commission/`)
 
-Contact sidebar image is set in `siteContent.js` (`commissionImages.sidebar`) — currently a free Unsplash photo of paints and brushes. To use your own file instead, add `sidebar.jpg` here and point `commissionImages.sidebar` to `/images/commission/sidebar.jpg`.
+Contact sidebar uses `wallArt.jpg` from `images/about/` via `commissionImages.sidebar` in `siteContent.js`. To use a dedicated file, add `sidebar.jpg` here and update that path.
 
 ## After adding files
 

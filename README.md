@@ -41,17 +41,18 @@ Serves the built React app from the Express server on port 3001.
 
 ## Deploy to Vercel (GitHub)
 
-1. Push this repo to GitHub (include `vercel.json` and `package-lock.json` files).
-2. In [Vercel](https://vercel.com) → **Add New Project** → import your GitHub repo.
-3. Leave **Root Directory** as `.` (repository root). Vercel reads `vercel.json` automatically:
-   - **Install:** root + `client` dependencies (so Vite is available)
-   - **Build:** `client` → `client/dist`
-   - **Output:** `client/dist`
-4. Deploy. React routes use SPA rewrites; `/api/contact` runs as a serverless function.
+Vercel builds from **GitHub only** — push changes here, then Vercel redeploys automatically.
 
-If the dashboard overrides settings, match `vercel.json` or clear custom build commands.
+1. Commit and push to `main` on GitHub (`vercel.json`, `package.json`, `client/package.json`, lock files).
+2. In Vercel → Project → **Settings** → **General**:
+   - **Root Directory:** `.` (repo root, not `client`)
+3. In **Build & Development Settings**, use defaults or match `vercel.json`:
+   - **Install Command:** `npm install` (also runs `postinstall` → installs `client` + Vite)
+   - **Build Command:** `npm run build`
+   - **Output Directory:** `client/dist`
+4. Use the **Production** URL (from the latest successful deploy on `main`). Older preview URLs with random hashes may show failed builds from before the fix.
 
-**Why the earlier error happened:** Vercel only ran `npm install` at the repo root, so `vite` in `client/` was never installed (`vite: command not found`).
+Contact form on Vercel uses `api/contact.js` (serverless). Local dev still uses the Express server in `server/`.
 
 ## Contact form
 

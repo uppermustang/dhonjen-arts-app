@@ -30,9 +30,11 @@
 
 .about-intro__portrait {
   width: 100%;
+  height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
+  min-height: 280px;
 }
 
 .about-intro__badge {
@@ -140,13 +142,18 @@
 
 .about-bio__featured {
   margin: 0;
+  position: relative;
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-sm);
   aspect-ratio: 3 / 4;
+  min-height: 320px;
+  background: var(--color-bg-alt);
 }
 
 .about-bio__featured img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -197,10 +204,14 @@
 .about-service-card__image-wrap {
   position: relative;
   aspect-ratio: 16 / 10;
+  min-height: 180px;
   overflow: hidden;
+  background: var(--color-bg-alt);
 }
 
 .about-service-card__image-wrap img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -250,10 +261,14 @@
   border-radius: var(--radius);
   overflow: hidden;
   min-height: 280px;
+  aspect-ratio: 4 / 5;
   box-shadow: var(--shadow-md);
+  background: var(--color-bg-alt);
 }
 
 .about-quotes__visual img {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;

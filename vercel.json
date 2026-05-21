@@ -4,5 +4,10 @@
   "installCommand": "npm install",
   "buildCommand": "npm run build",
   "outputDirectory": "client/dist",
-  "rewrites": [{ "source": "/((?!api/).*)", "destination": "/index.html" }]
+  "rewrites": [
+    {
+      "source": "/((?!api/|images/|assets/|dhonjenartsLogo\\.png).*)",
+      "destination": "/index.html"
+    }
+  ]
 }

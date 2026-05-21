@@ -30,7 +30,7 @@ npm run dev
 - Site: [http://localhost:5173](http://localhost:5173)
 - API health: [http://localhost:3001/api/health](http://localhost:3001/api/health)
 
-## Production build
+## Production build (local)
 
 ```bash
 npm run build
@@ -38,6 +38,20 @@ npm start
 ```
 
 Serves the built React app from the Express server on port 3001.
+
+## Deploy to Vercel (GitHub)
+
+1. Push this repo to GitHub (include `vercel.json` and `package-lock.json` files).
+2. In [Vercel](https://vercel.com) → **Add New Project** → import your GitHub repo.
+3. Leave **Root Directory** as `.` (repository root). Vercel reads `vercel.json` automatically:
+   - **Install:** root + `client` dependencies (so Vite is available)
+   - **Build:** `client` → `client/dist`
+   - **Output:** `client/dist`
+4. Deploy. React routes use SPA rewrites; `/api/contact` runs as a serverless function.
+
+If the dashboard overrides settings, match `vercel.json` or clear custom build commands.
+
+**Why the earlier error happened:** Vercel only ran `npm install` at the repo root, so `vite` in `client/` was never installed (`vite: command not found`).
 
 ## Contact form
 
